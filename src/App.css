@@ -1,9 +1,26 @@
 
 .Footer{
   border: solid;
-  color: aqua;
+  background-color: black;
 }
 .Header{
   border: solid;
   background-color: black;
+}
+.receipt{
+  border: solid;
+  margin: 120px;
+  padding: 20px;
+  font-size: larger; 
+  font-weight: 500; 
+  font-family: cursive;
+  border-style: double;
+  border-color: red
+
+  
+;
+
+
+  
+
 }

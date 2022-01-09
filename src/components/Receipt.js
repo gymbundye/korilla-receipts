@@ -1,22 +1,17 @@
-function Receipt(props) {
 
-  const {receiptData} = props
+export default function Receipt(props) {
 
-    return (
+  return (
+  <div className="receipt">
+    <p> Person: {props.receipt.person} </p>
+    <p> Main: {props.receipt.order.main} </p>
+    <p> Protein: {props.receipt.order.protein} </p>
+    <p> Rice:{ props.receipt.order.rice} </p>
+    <p> Toppings: {props.receipt.order.toppings[0]},{props.receipt.order.toppings[1]},{props.receipt.order.toppings[2]} </p>
+    <p> Sauce: {props.receipt.order.sauce} </p>
+    <p> Drink: {props.receipt.order.drink} </p>
+    <p> Cost: ${props.receipt.order.cost} </p>
 
-      <div className="Receipt">
-
-        <p>Person:{receiptData.person}</p>
-        <p>Order: {receiptData.order}</p>
-        <p>Main:  {receiptData.main}</p>
-        <p>Rice:  {receiptData.rice}</p>
-        <p>Sauce: {receiptData.sauce}</p>
-        <p>Drink: {receiptData.drink}</p>
-        <p>Cost:  {receiptData.cost}</p>
-        
-
-      </div>
-    );
-  }
-  
-  export default Receipt;
+  </div>
+);
+}

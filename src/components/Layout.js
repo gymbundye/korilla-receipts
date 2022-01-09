@@ -1,23 +1,10 @@
-import Header from "./Header"
-import Footer from "./Footer"
-import Main from "./Main"
 
+import receipts from "../Data";
+import Receipt from "./Receipt";
 
-function Layout(){
-
-
-
-    return (
-        <div>
-            
-            <Header></Header>
-            <Main></Main>
-            <Footer></Footer>
-
-
-
-
-        </div>
-    )
-}
-export default Layout
+export default function Layout() {
+  return( <div>
+     {receipts.map((receipt) => {return <Receipt receipt = {receipt} />})
+     }
+  </div>)
+ }
